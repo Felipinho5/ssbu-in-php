@@ -10,9 +10,9 @@
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
 </head>
 <body>
-    <img class="logo" src="img/ssbu-logo.png">
     <section>
-        <form id="login-signup" data-status="active" action="" method="post">
+        <div><img class="logo" src="img/ssbu-logo.png"></div>
+        <form id="login-signup" action="" method="post">
 
         <h1>Login</h1>
         <div>

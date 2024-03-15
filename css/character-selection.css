@@ -17,30 +17,45 @@ body {
     flex-direction: column;
     width: 100vw;
     height: 100vh;
-    background: black;
+    background-image: url('../img/final-destination.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1 {
     font-family: 'Smash';
     font-size: clamp(25px, 5vw, 50px);
     color: white;
+    text-align: center;
 }
 
 .characters-list {
+    --move-distance: translateX(-30px);
+    --fade-timer: 300ms;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    border: 3px solid white;
     margin-top: 20px;
-    width: 70%;
+    width: min(960px, 90%);
+}
+
+body > h1 {
+    --move-distance: translateY(-30px);
+    --fade-timer: 1000ms;
+}
+
+.character-box, body > h1 {
+    opacity: 0;
+    animation: fadeAndMoveIn var(--fade-timer) ease-out forwards;
 }
 
 .character-box {
     flex-basis: 25%;
     text-align: center;
-    border: inherit;
+    border: 3px solid white;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -60,4 +75,16 @@ h1 {
 .character-box h1 {
     font-size: clamp(10px, 2vw, 20px);
     color: white;
+}
+
+@keyframes fadeAndMoveIn {
+    from {
+        opacity: 0;
+        transform: var(--move-distance);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
 }

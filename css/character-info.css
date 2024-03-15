@@ -16,15 +16,20 @@ body {
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    background: black;
+    background-image: url('../img/final-destination.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
 }
 
 .character-info {
     width: 75%;
     height: 520px;
+    background: black;
+    border: 3px solid white;
     display: grid;
-    grid-auto-columns:  40% 40% 20%;
+    grid-auto-columns:  45% 40% 15%;
     grid-auto-rows: 1fr 1fr;
     grid-template-areas: 
     'image info icon'
@@ -32,7 +37,24 @@ body {
     ;
 }
 
+.character-info div {
+    border: inherit;
+}
+
+.character-info div * {
+    opacity: 0;
+    animation: fadeAndMoveIn var(--fade-timer) ease-out forwards;
+}
+
+.character-info div:not(.image) {
+    overflow: auto;
+    --fade-timer: 1000ms;
+    --move-distance: translateX(-100px);
+}
+
 .image {
+    --fade-timer: 2000ms;
+    --move-distance: translateY(-100px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,9 +65,19 @@ body {
     width: 100%;
 }
 
+.info, .icon {
+    z-index: 1;
+    background: black;
+}
+
 .info {
     grid-area: info;
     padding: 20px;
+}
+
+.info p {
+    font-family: 'Arial';
+    margin-top: 10px;
 }
 
 .info h1 {
@@ -54,8 +86,9 @@ body {
 
 .icon {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     grid-area: icon;
 }
 
@@ -70,4 +103,38 @@ body {
     justify-content: center;
     padding: 20px;
     grid-area: description;
+}
+
+@media screen and (max-width: 530px) {
+    .character-info {
+        margin-top: 50px;
+        grid-auto-columns:  75% 25%;
+        grid-auto-rows: 50% 25% 25%;
+        grid-template-areas: 
+        'image image'
+        'info icon'
+        'description description'
+        ;
+    }
+
+    .info {
+        padding: 5%;
+        overflow-y: auto;
+    }
+
+    .image img {
+        width: 100%;
+    }
+}
+
+@keyframes fadeAndMoveIn {
+    from {
+        opacity: 0;
+        transform: var(--move-distance);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
 }

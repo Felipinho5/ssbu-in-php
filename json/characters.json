@@ -1,64 +1,80 @@
 [
     {
       "name": "Mario",
+      "nickname": "O Próprio Mr. Videogame",
       "series": "Mario",
       "icon": "img/icons/chara_2_mario_00.png",
+      "icon-series": "img/series/mario.svg",
       "image": "img/portraits/chara_0_mario_00.png",
       "render": "img/renders/Mario.png",
       "description": "Mario é o personagem principal da série de jogos da Nintendo. Ele é um encanador corajoso e determinado, sempre pronto para enfrentar qualquer desafio para salvar a Princesa Peach do vilão Bowser."
     },
     {
       "name": "Donkey Kong",
+      "nickname": "Rei da Selva",
       "series": "Donkey Kong",
       "icon": "img/icons/chara_2_donkey_00.png",
+      "icon-series": "img/series/donkey kong.svg",
       "image": "img/portraits/chara_0_donkey_00.png",
       "render": "img/renders/Donkey.png",
       "description": "Donkey Kong é um gorila gigante com um coração gentil. Ele vive na Ilha de Donkey Kong e é conhecido por sua força incomparável. Apesar de sua aparência intimidadora, ele é um aliado confiável e amigo leal."
     },
     {
       "name": "Link",
+      "nickname": "Campeão de Hyrule",
       "series": "The Legend of Zelda",
       "icon": "img/icons/chara_2_link_00.png",
+      "icon-series": "img/series/the legend of zelda.svg",
       "image": "img/portraits/chara_0_link_00.png",
       "render": "img/renders/Link.png",
       "description": "Link é o herói corajoso da lendária série de jogos The Legend of Zelda. Ele é conhecido por sua habilidade com a espada e seu compromisso em proteger o reino de Hyrule de forças malignas, especialmente do vilão Ganondorf."
     },
     {
       "name": "Samus",
+      "nickname": "Caçadora de Recompensas Intergaláctica",
       "series": "Metroid",
       "icon": "img/icons/chara_2_samus_00.png",
+      "icon-series": "img/series/metroid.svg",
       "image": "img/portraits/chara_0_samus_00.png",
       "render": "img/renders/Samus.png",
       "description": "Samus é uma caçadora de recompensas galáctica conhecida por sua armadura poderosa e habilidades de combate excepcionais. Ela luta contra ameaças alienígenas e é famosa por suas batalhas contra os temíveis Metroids."
     },
     {
       "name": "Yoshi",
+      "nickname": "Onívoro do Ano",
       "series": "Yoshi",
       "icon": "img/icons/chara_2_yoshi_00.png",
+      "icon-series": "img/series/yoshi.svg",
       "image": "img/portraits/chara_0_yoshi_00.png",
       "render": "img/renders/Yoshi.png",
       "description": "Yoshi é uma criatura dinossauriana amigável que vive na Ilha Yoshi. Ele é conhecido por sua língua longa e capacidade de engolir inimigos. Yoshi é um amigo leal de Mario e está sempre pronto para ajudar em suas aventuras."
     },
     {
       "name": "Kirby",
+      "nickname": "Perigosamente Fofo",
       "series": "Kirby",
       "icon": "img/icons/chara_2_kirby_00.png",
+      "icon-series": "img/series/kirby.svg",
       "image": "img/portraits/chara_0_kirby_00.png",
       "render": "img/renders/Kirby.png",
       "description": "Kirby é uma bola rosa adorável com poderes surpreendentes. Ele pode engolir seus inimigos e absorver suas habilidades, tornando-se uma ameaça formidável. Apesar de sua aparência fofa, Kirby é um adversário formidável nos combates."
     },
     {
       "name": "Fox",
+      "nickname": "Líder de Star Fox",
       "series": "Star Fox",
       "icon": "img/icons/chara_2_fox_00.png",
+      "icon-series": "img/series/star fox.svg",
       "image": "img/portraits/chara_0_fox_00.png",
       "render": "img/renders/Fox.png",
       "description": "Fox McCloud é o líder da equipe de mercenários conhecida como Star Fox. Ele é um piloto habilidoso e um combatente corajoso, lutando contra ameaças intergalácticas e protegendo o universo de vilões como Andross."
     },
     {
       "name": "Pikachu",
+      "nickname": "O Choque Elétrico",
       "series": "Pokémon",
       "icon": "img/icons/chara_2_pikachu_00.png",
+      "icon-series": "img/series/pokemon.svg",
       "image": "img/portraits/chara_0_pikachu_00.png",
       "render": "img/renders/Pikachu.png",
       "description": "Pikachu é um Pokémon elétrico conhecido por sua fofura e poderosas habilidades elétricas. Ele é um amigo leal e um companheiro confiável em batalha, sempre pronto para proteger seus amigos e derrotar seus adversários."

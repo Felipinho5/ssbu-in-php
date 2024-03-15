@@ -8,6 +8,7 @@
     </title>
     <link rel="icon" href="img/ssbu-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/character-info.css">
+    <script type="text/javascript" src="js/character-info.js" defer></script>
 </head>
 <body>
     <?php include_once('php/character.php') ?>

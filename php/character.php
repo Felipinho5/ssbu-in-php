@@ -9,8 +9,10 @@
     echo sprintf(CHARACTER_INFO,
         JSON_CHARACTERS[$i]['render'],
         JSON_CHARACTERS[$i]['name'],
+        JSON_CHARACTERS[$i]['nickname'],
         JSON_CHARACTERS[$i]['series'],
         JSON_CHARACTERS[$i]['icon'],
+        JSON_CHARACTERS[$i]['icon-series'],
         JSON_CHARACTERS[$i]['description']
     );
 
