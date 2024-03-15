@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Cadastro</title>
     <link rel="icon" href="img/ssbu-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -14,17 +14,18 @@
     <section>
         <form id="login-signup" data-status="active" action="" method="post">
 
-        <h1>Login</h1>
+        <h1>Cadastro</h1>
         <div>
             <input type="email" name="email" placeholder="E-mail">
             <input type="password" name="password" placeholder="Senha">
-            <input type="submit" method="post" value="Entrar">
+            <input type="password" name="confirm-password" placeholder="Confirmar senha">
+            <input type="submit" method="post" value="Cadastrar">
         </div>
 
-        <?php include_once('php/login.php') ?>
-            
-        <p>Já possui uma conta? <br><a href="signup-page.php">Cadastre-se</a></p>
-            
+        <?php include_once('php/signup.php') ?>
+
+        <p>Já possui uma conta? <br><a href="index.php">Faça login</a></p>
+
         </form>
     </section>
 </body>

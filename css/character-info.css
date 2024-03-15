@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Smash';
+    src: url('smash-font.ttf') format('truetype');
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    color: white;
+}
+
+.character-info {
+    width: 75%;
+    height: 520px;
+    display: grid;
+    grid-auto-columns:  40% 40% 20%;
+    grid-auto-rows: 1fr 1fr;
+    grid-template-areas: 
+    'image info icon'
+    'image description description'
+    ;
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: image;
+}
+
+.image img {
+    width: 100%;
+}
+
+.info {
+    grid-area: info;
+    padding: 20px;
+}
+
+.info h1 {
+    font-family: 'Smash';
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: icon;
+}
+
+.icon img {
+    width: 50%;
+}
+
+.description {
+    font-family: 'Arial';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    grid-area: description;
+}
